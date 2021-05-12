@@ -1,0 +1,88 @@
+*{
+  padding:0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+    background-image: url(Resources/Background/Back.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.info{
+    color:#f7a440;
+}
+.bio,.image-quote{
+    width:100vh;
+    height:100vh;
+}
+.about-me,.skills,.contact-us
+{
+  width:100%;
+  height:100vh;
+}
+i:hover{
+  color:#f7a440;
+}
+
+.typewriter h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:500;
+  white-space:wrap;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid orange; /* The typwriter cursor */
+  white-space:nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40,end),
+    blink-caret .75s step-end infinite;
+}
+.typewriter
+{
+  letter-spacing: .15em;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100%;}
+}
+.about-me>.heading-1>img{
+    width: 200px!important;
+    height:200px!important; 
+    border-radius: 50%;
+  }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@media only screen and (max-width: 960px) {
+  .image-quote{
+    align-items:flex-start!important;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .name{
+    font-size:1.75rem;
+  }
+  .about-me>.heading-1>img{
+    width: 150px!important;
+    height:150px!important; 
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .name{
+    font-size:1.67rem;
+  }
+  .typewriter p
+  {
+    font-size:.9rem
+  }
+}
