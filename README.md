@@ -1,7 +1,7 @@
 # Portfolio
 Portfolio one page Website with Minimalist Design
 ## Features
-1. Responsive Design
+1. Responsive & Minimal Design
 2. Contact form
 ## Screenshots
 ![Landing Page](Screenshots/Landing.jpg)
